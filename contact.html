@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Welcome to Arrow Photography</title>
+    <link href="assets/css/styles.css" rel="stylesheet" media="all"/>
 </head>
 <body>
 
-<div id="header">
+<header>
 <h1>Arrow Photography</h1>
 <ul class="nav">
     <li><a href="index.html">Home</a></li>
@@ -17,7 +18,7 @@
     <li><a href="contact.html">Contact</a></li>
 
 </ul>
-</div>
+</header>
 <div id="content">
 
 <p><img src="assets/images/ArrowPhotograhyPortfolio4.jpg" alt="Wedding Photography" /> </p>
@@ -102,46 +103,51 @@
  </tfoot>
  </table>
 
+<br><br><br>
+
+<form method="post" action="http://webdesignstudents.co.uk/students/response.php"><table>
+        <tr><td><label for="contactname">Name:</label></td><td><input type="text" name="contactname" id="contactname" required/></td></tr>
+        <tr><td><label for="contactemail">Email:</label></td><td><input type="email" name="contactemail" id="contactemail" required/></td></tr>
 
 
-<form method="post" action="http://webdesignstudents.co.uk/students/response.php">
-        <p><label for="contactname">Name:</label><input type="text" name="contactname" id="contactname"/></p>
-        <p><label for="contactemail">Email:</label> <input type="text" name="contactemail" id="contactemail"/> </p>
-
-    <p> Gender:
-    <label>
-
+    <tr><td> Gender:</td>
+    <td><label>
         <input type="radio" name="gender" value="male"/> Male
         </label>
         <label>
         <input type="radio" name="gender" value="female" checked/>Female
-    </label>
-    </p>
+        </label>
+    </td></tr>
 
-        <p><label for="location">Location:</label>
-            <select name="location" id="location">
+
+        <tr><td><label for="location">Location:</label></td>
+               <td>
+                <select name="location" id="location">
                 <option value="Brighton">Brighton &amp; Hove </option>
                 <option value="Worthing" selected>Worthing </option>
                 <option value="Eastbourne">Eastbourne</option>
                 </select>
-        </p>
+               </td></tr>
 
 
-        <p><label for="comment">Comment:</label>
-            <textarea name="comment" id="comment" cols="18" rows="8"></textarea>
-        </p>
+        <tr><td><label for="comment">Comment:</label></td>
+           <td> <textarea name="comment" id="comment" cols="18" rows="8" required></textarea>
+           </td></tr>
 
-    <p>
-        <input type="submit" name="submit" value="Send comment"/>
-    </p>
+        <tr>
+            <!-- <td>&nbsp;</td> -->
+           <td>&nbsp;</td>
+        <td><input type="submit" name="submit" value="Send comment"/></td>
+        </tr>
 
-</form>
+    </table>
+    </form>
 
 
 
 
 
-
+<footer>
 <ul class="nav">
     <li><a href="general/terms.html">Terms &amp; Conditions</a> </li>
     <li><a href="general/faq.html" ><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
@@ -149,7 +155,7 @@
 
 <p>All images &copy;2014 <em>Arrow Photography</em>. All rights reserved.</p>
 
-<div id="footer"></div>
+</footer>
 
 </body>
 </html>
