@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8"/>
     <title></title>
+    <link href="../assets/css/styles.css" rel="stylesheet" media="all"/>
 </head>
 <body>
+
+<header>
+<h1><span>Arrow Photography</span></h1>
+<nav>
+    <ul class="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../portfolio/index.html"> Portfolio</a></li>
+        <li><a href="../packages/index.html">Packages</a> </li>
+        <li><a href="../news.html">News</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<p><img src="../assets/images/ArrowPhotograhyFrontPage3.jpg" alt="Wedding Photography" /></p>
+
+
+
+<form method="get" action="http://webdesignstudents.co.uk/students/response.php" class="table">
+    <label class="row">
+        <span class="cell">*name:</span>
+        <input type="text" name="contactname" required class="cell"/>
+        </label>
+    <label class="row">
+        <span class="cell">*Email:</span>
+        <input type="text" name="contactemail" class="cell"/>
+    </label>
+    <label class="row">
+        <span class="cell">*Comment:</span>
+        <textarea name="comment" cols="18" rows="8" required class="cell"></textarea>
+    </label>
+    <label class="row">
+        <span class="cell">*required information </span>
+        <input type="submit" name="submit" class="cell"/>
+    </label>
+</form>
+
+
+
+<style>
+
+    form.table{
+        display: table;
+        width: 800px;
+        margin: 24px auto;
+         }
+
+    label.row{
+        display: table-row;
+    }
+
+    .cell{
+        display: table-cell;
+        width: 75%;
+    }
+
+    span.cell{
+        width: 25%;
+    }
+
+    input,textarea{
+        width: 100%;
+    }
+</style>
+
 
 </body>
 </html>

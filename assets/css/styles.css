@@ -18,7 +18,9 @@ body{
     }
 
 
-   
+   header, footer{
+       clear: both;
+   }
 
 
 a{
@@ -37,7 +39,7 @@ a{
 
 
 a:hover{
-    color: #ffdd9d;
+    color: #ffd29d;
 }
 header ul, footer ul{
     padding-right: 0;
@@ -53,7 +55,7 @@ header li, footer li{
 }
 
 header a, footer a{
-    background-color: #ffdd9d;
+    background-color: #333333;
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -77,6 +79,12 @@ footer li{
 
 footer p{
     padding: 10px;
+}
+
+section .subsection{
+     width: 460px;
+    margin: 24px 10px;
+    float: left;
 }
 
 
