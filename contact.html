@@ -4,10 +4,35 @@
     <meta charset="UTF-8"/>
     <title>Welcome to Arrow Photography</title>
     <link href="assets/css/styles.css" rel="stylesheet" media="all"/>
+    <style>
+
+        form.table{
+            display:table;
+            width:600px;
+            margin: 24px auto;
+        }
+        label.row{
+            display:table-row;
+        }
+        .cell{
+            display:table-cell;
+        }
+        span.cell{
+            width:25%;
+        }
+        input,textarea,select{
+            width:100%;
+        }
+        input[type=radio]{
+            width: auto;
+        }
+    </style>
+
 </head>
 <body>
 
 <header>
+    <nav>
 <h1>Arrow Photography</h1>
 <ul class="nav">
     <li><a href="index.html">Home</a></li>
@@ -17,7 +42,7 @@
     <li><a href="news.html">News</a></li>
     <li><a href="contact.html">Contact</a></li>
 
-</ul>
+</ul></nav>
 </header>
 <div id="content">
 
@@ -105,56 +130,51 @@
 
 <br><br><br>
 
-<form method="post" action="http://webdesignstudents.co.uk/students/response.php"><table>
-        <tr><td><label for="contactname">Name:</label></td><td><input type="text" name="contactname" id="contactname" required/></td></tr>
-        <tr><td><label for="contactemail">Email:</label></td><td><input type="email" name="contactemail" id="contactemail" required/></td></tr>
-
-
-    <tr><td> Gender:</td>
-    <td><label>
-        <input type="radio" name="gender" value="male"/> Male
-        </label>
-        <label>
+<form method="post" action="http://webdesignstudents.co.uk/students/response.php" class="table">
+    <label class="row">
+        <span class="cell">*Name:</span>
+        <input type="text" name="contactname" required class="cell"/>
+    </label>
+    <label class="row">
+        <span class="cell">Email:</span>
+        <input type="text" name="contactname" required class="cell"/>
+    </label>
+    <label class="row">
+        <span class="cell">Gender:</span>
+        <input type="radio" name="gender" value="male"/>Male
         <input type="radio" name="gender" value="female" checked/>Female
-        </label>
-    </td></tr>
-
-
-        <tr><td><label for="location">Location:</label></td>
-               <td>
-                <select name="location" id="location">
-                <option value="Brighton">Brighton &amp; Hove </option>
-                <option value="Worthing" selected>Worthing </option>
-                <option value="Eastbourne">Eastbourne</option>
-                </select>
-               </td></tr>
-
-
-        <tr><td><label for="comment">Comment:</label></td>
-           <td> <textarea name="comment" id="comment" cols="18" rows="8" required></textarea>
-           </td></tr>
-
-        <tr>
-            <!-- <td>&nbsp;</td> -->
-           <td>&nbsp;</td>
-        <td><input type="submit" name="submit" value="Send comment"/></td>
-        </tr>
-
-    </table>
-    </form>
+    </label>
+    <label class="row">
+        <span class="cell">Location:</span>
+        <select name="location" id="location">
+            <option value="Brighton">Brighton & Hove</option>
+            <option value="Worthing">Worthing</option>
+            <option value="Eastbourne">Eastbourne</option>
+        </select>
+    </label>
+    <label class="row">
+        <span class="cell">*Comment:</span>
+        <textarea name="comment" cols="18" rows="8" required class="cell"></textarea>
+    </label>
+    <label class="row">
+        <span class="cell">*Required Information</span>
+        <input type="submit" name="submit" class="cell"/>
+    </label>
+</form>
 
 
 
 
 
 <footer>
+    <nav>
 <ul class="nav">
     <li><a href="general/terms.html">Terms &amp; Conditions</a> </li>
     <li><a href="general/faq.html" ><abbr title="Frequently Asked Questions">FAQ</abbr></a></li>
 </ul>
 
 <p>All images &copy;2014 <em>Arrow Photography</em>. All rights reserved.</p>
-
+    </nav>
 </footer>
 
 </body>
