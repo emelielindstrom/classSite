@@ -1,0 +1,90 @@
+/**
+* Reset or normalise used to standardise browser display
+**/
+
+
+/* Redefine existing html styles*/
+@import url("normalize.css");
+body{
+
+    font : smaller/160% sans-serif;
+    color: #999999;
+    margin: 0 auto;
+}
+
+header, footer{
+      clear: both;
+  }
+
+
+nav ul{
+    text-align: center;
+    padding: 0;
+    margin: 24px 0;
+    height: 24px;
+    list-style: none;
+}
+
+nav li{
+    width: 46%;
+    float: left;
+    margin: 0 2%;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    display: block;
+    padding: 5px 0;
+}
+
+nav a:hover{
+    background-color: #999999;
+    color: #333333;
+}
+
+footer li{
+    width: 46%;
+}
+
+h1{
+    padding: 24px 10px;
+}
+
+div img{
+        width: 100%;
+    }
+
+footer p {
+    padding: 10px;
+
+}
+
+section .subsection{
+    width: 96%;
+    margin: 24px 2%;
+    float: left;
+}
+
+@media(min-width: 768px){
+    nav li{
+        width: 12.66%;
+    }
+footer li{
+    width: 46%;
+}
+
+@media (min-width: 940px) {
+    body{
+    max-width: 960px;
+    }
+    section .subsection{
+        width: 46%;
+    }
+}
+}
+
+

@@ -1,90 +1,31 @@
-/**
-* Reset or normalise used to standardise browser display
-**/
-
-
-/* Redefine existing html styles*/
-@import url("normalize.css");
-body{
-
-    font : smaller/160% sans-serif;
-    color: #999999;
-    margin: 0 auto;
+@import "normalize.css";
+header {
+  -webkit-background-image: linear-gradient(#ffffff, #3c9aff);
+  -moz-background-image: linear-gradient(#ffffff, #3c9aff);
+  -ms-background-image: linear-gradient(#ffffff, #3c9aff);
+  -o-background-image: linear-gradient(#ffffff, #3c9aff);
+  background-image: linear-gradient(#ffffff, #3c9aff);
 }
-
-header, footer{
-      clear: both;
-  }
-
-
-nav ul{
-    text-align: center;
-    padding: 0;
-    margin: 24px 0;
-    height: 24px;
-    list-style: none;
+header h1 {
+  color: #bbdcff;
 }
-
-nav li{
-    width: 46%;
-    float: left;
-    margin: 0 2%;
+header nav {
+  -webkit-background-image: linear-gradient(#ffffff, #3c9aff);
+  -moz-background-image: linear-gradient(#ffffff, #3c9aff);
+  -ms-background-image: linear-gradient(#ffffff, #3c9aff);
+  -o-background-image: linear-gradient(#ffffff, #3c9aff);
+  background-image: linear-gradient(#ffffff, #3c9aff);
 }
-
-
-
-nav a{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #333333;
-    display: block;
-    padding: 5px 0;
+header nav ul {
+  height: 24px;
 }
-
-nav a:hover{
-    background-color: #999999;
-    color: #333333;
+header nav ul li {
+  width: 160px;
+  float: left;
 }
-
-footer li{
-    width: 46%;
+header nav ul li a {
+  color: #3c9aff;
+  text-decoration: none;
+  padding: 4px 0;
+  display: block;
 }
-
-h1{
-    padding: 24px 10px;
-}
-
-div img{
-        width: 100%;
-    }
-
-footer p {
-    padding: 10px;
-
-}
-
-section .subsection{
-    width: 96%;
-    margin: 24px 2%;
-    float: left;
-}
-
-@media(min-width: 768px){
-    nav li{
-        width: 12.66%;
-    }
-footer li{
-    width: 46%;
-}
-
-@media (min-width: 940px) {
-    body{
-    max-width: 960px;
-    }
-    section .subsection{
-        width: 46%;
-    }
-}
-}
-
-
